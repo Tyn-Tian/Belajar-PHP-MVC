@@ -10,7 +10,8 @@ class HomeController
             "title" => "Belajar PHP MVC",
             "content" => "Selamat belajar PHP MVC"
         ];
-        echo "HomeController.index()";
+        
+        require __DIR__ . "/../View/Home/index.php";
     }
 
     function hello(): void 
