@@ -28,4 +28,20 @@ class HomeController
     {
         echo "Author: Christian";
     }
+
+    function login(): void
+    {
+        $request = [
+            "username" => $_POST['username'],
+            "password" => $_POST['password']
+        ];
+
+        $user = [
+
+        ];
+
+        $response = [
+            "message" => "Login Sukses"
+        ];
+    }
 }
