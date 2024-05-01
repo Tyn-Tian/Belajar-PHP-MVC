@@ -2,6 +2,8 @@
 
 namespace TynChristian\Belajar\PHP\MVC\Controller;
 
+use TynChristian\Belajar\PHP\MVC\App\View;
+
 class HomeController
 {
     function index(): void 
@@ -11,7 +13,7 @@ class HomeController
             "content" => "Selamat belajar PHP MVC"
         ];
         
-        require __DIR__ . "/../View/Home/index.php";
+        View::render("Home/index", $model);
     }
 
     function hello(): void 
